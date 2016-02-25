@@ -22,7 +22,7 @@
   
   <td style="padding-left: 0.5em;">
    <div id="projectname">Pause Menu Asset
-   &#160;<span id="projectnumber">Ver:feb1616-0.1a</span>
+   &#160;<span id="projectnumber">Ver:feb2416-0.2a</span>
    </div>
    <div id="projectbrief">This asset is an open source Unity Pause Menu, created by Eric Zhu. © 2016 Eric Zhu of Great Arc Studios.</div>
   </td>
@@ -141,6 +141,7 @@ Public Member Functions</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Method for moving to the next resoution in the allRes array.  <a href="#a50486bcf5af755b50f6123af99c00c00"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_great_arc_studios_1_1_pause_manager.html#a0b5513090503e100a80924d14e9ddd6b">lastRes</a> ()</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Method for moving to the last resoution in the allRes array.  <a href="#a0b5513090503e100a80924d14e9ddd6b"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_great_arc_studios_1_1_pause_manager.html#a6033d5835c33dd42b556ae784312aba2">enableSimpleTerrain</a> (Boolean b)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_great_arc_studios_1_1_pause_manager.html#afb513d3045164dd6978c9f31571f0cf9">forceOnANISO</a> ()</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Force aniso on using quality settings.  <a href="#afb513d3045164dd6978c9f31571f0cf9"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_great_arc_studios_1_1_pause_manager.html#ad0767bc5464330d016aa0ededf82aa13">perTexANISO</a> ()</td></tr>
@@ -155,8 +156,8 @@ Public Member Functions</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Update terrain density.  <a href="#ae516e14958c13281fd1bef0464a4b822"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_great_arc_studios_1_1_pause_manager.html#a469a3c4415703f859c0a523c0828bfe0">updateMSAA</a> (int msaaAmount)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Update MSAA quality using quality settings.  <a href="#a469a3c4415703f859c0a523c0828bfe0"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_great_arc_studios_1_1_pause_manager.html#aefaedf084f77b336d3d83a198579d98b">disMSAA</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Set MSAA to 0x (disabling it) using quality settings.  <a href="#aefaedf084f77b336d3d83a198579d98b"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_great_arc_studios_1_1_pause_manager.html#aa6b61410e08f184fee21e9bcf5694847">disableMSAA</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Set MSAA to 0x (disabling it) using quality settings.  <a href="#aa6b61410e08f184fee21e9bcf5694847"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_great_arc_studios_1_1_pause_manager.html#afa72ec6586556d2d93ca95f1fe616c0c">twoMSAA</a> ()</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Set MSAA to 2x using quality settings.  <a href="#afa72ec6586556d2d93ca95f1fe616c0c"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_great_arc_studios_1_1_pause_manager.html#a39df04d57e15c420724ccaee4bec8273">fourMSAA</a> ()</td></tr>
@@ -223,6 +224,24 @@ Public Attributes</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">AA drop down menu.  <a href="#af94d94a2cdbc4b3c7fb149d0e83116c3"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">UnityEngine.UI.Dropdown&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_great_arc_studios_1_1_pause_manager.html#a7fe316ab6d2329153b3e0a3756ae7e2f">afCombo</a></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Aniso drop down menu.  <a href="#a7fe316ab6d2329153b3e0a3756ae7e2f"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">UnityEngine.UI.Slider&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_great_arc_studios_1_1_pause_manager.html#a425c322c1a986e4be4239c1cd67c6a3c">fovSlider</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">UnityEngine.UI.Slider&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_great_arc_studios_1_1_pause_manager.html#ac0028d0124f4843fd901b20d714736e1">modelQualSlider</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">UnityEngine.UI.Slider&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_great_arc_studios_1_1_pause_manager.html#af15e7efabed684b143864acd4b6befd0">terrainQualSlider</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">UnityEngine.UI.Slider&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_great_arc_studios_1_1_pause_manager.html#a7f7903436dfd0c0133e80d76840f9c32">highQualTreeSlider</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">UnityEngine.UI.Slider&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_great_arc_studios_1_1_pause_manager.html#a469cba821727515fd0e8f2fb58906db5">renderDistSlider</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">UnityEngine.UI.Slider&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_great_arc_studios_1_1_pause_manager.html#ae8c9d5cb99406fe6a38c826bf100ba11">terrainDensitySlider</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">UnityEngine.UI.Slider&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_great_arc_studios_1_1_pause_manager.html#ae33280a52c07b831ad4673e671c90ed5">shadowDistSlider</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">UnityEngine.UI.Slider&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_great_arc_studios_1_1_pause_manager.html#adbf7d3f4c5aa423d5a624c089732a1c2">audioMasterSlider</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">UnityEngine.UI.Slider&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_great_arc_studios_1_1_pause_manager.html#adc6326277b386a6956ea5259ebcee9f7">audioMusicSlider</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">UnityEngine.UI.Slider&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_great_arc_studios_1_1_pause_manager.html#ae1d1acbad2457c55fe6cb92d6b60abaa">audioEffectsSlider</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">UnityEngine.UI.Toggle&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_great_arc_studios_1_1_pause_manager.html#a39f21e4760c8e541a9e610a0d6578e33">vSyncToggle</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">UnityEngine.UI.Toggle&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_great_arc_studios_1_1_pause_manager.html#a88a19f56dd66315486f2ddbce79a085f">aoToggle</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">UnityEngine.UI.Toggle&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_great_arc_studios_1_1_pause_manager.html#a498d01c3dd361b01f25b3752e104e8f7">dofToggle</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">UnityEngine.UI.Toggle&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_great_arc_studios_1_1_pause_manager.html#a6097cd469cd27f746b3b3ca837062464">fullscreenToggle</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">Text&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_great_arc_studios_1_1_pause_manager.html#a13a21a7dfdfe0c2b6b118ecc9845af80">presetLabel</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">The preset text label.  <a href="#a13a21a7dfdfe0c2b6b118ecc9845af80"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">Text&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_great_arc_studios_1_1_pause_manager.html#ac6cb83a52f15b8e1ab96a438f8553599">resolutionLabel</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Resolution text label.  <a href="#ac6cb83a52f15b8e1ab96a438f8553599"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">float[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_great_arc_studios_1_1_pause_manager.html#a5f0ad0377ea34155c49cbd3b89315460">LODBias</a></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Lod bias float array.  <a href="#a5f0ad0377ea34155c49cbd3b89315460"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">float[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_great_arc_studios_1_1_pause_manager.html#aa464d866af51e2d31c2f70f712c2b6a8">shadowDist</a></td></tr>
@@ -233,10 +252,10 @@ Public Attributes</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">An array of sound effect audio sources.  <a href="#a0ee4178f452b39b3afa09a8278ff7d18"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">GameObject[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_great_arc_studios_1_1_pause_manager.html#a35d0bdcd0ee705f7c4f60b170977595c">otherUIElements</a></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">An array of the other UI elements, which is used for disabling the other elements when the game is paused.  <a href="#a35d0bdcd0ee705f7c4f60b170977595c"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">Text&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_great_arc_studios_1_1_pause_manager.html#a13a21a7dfdfe0c2b6b118ecc9845af80">presetLabel</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">The preset text label.  <a href="#a13a21a7dfdfe0c2b6b118ecc9845af80"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">Text&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_great_arc_studios_1_1_pause_manager.html#ac6cb83a52f15b8e1ab96a438f8553599">resolutionLabel</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Resolution text label.  <a href="#ac6cb83a52f15b8e1ab96a438f8553599"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">Boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_great_arc_studios_1_1_pause_manager.html#a16600b00bffd4918dac2f9e0e0251a97">hardCodeSomeVideoSettings</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Editor boolean for hardcoding certain video settings.  <a href="#a16600b00bffd4918dac2f9e0e0251a97"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">Boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_great_arc_studios_1_1_pause_manager.html#a56ea9306f3aa8f53e60d050a178cbd27">useSimpleTerrain</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Boolean for turning on simple terrain.  <a href="#a56ea9306f3aa8f53e60d050a178cbd27"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">IEnumerator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_great_arc_studios_1_1_pause_manager.html#a451ad4eeec8e2a03f96d3832033b704b">applyAudioMain</a> ()</td></tr>
@@ -267,8 +286,6 @@ Protected Attributes</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Inital vsync count, the Unity docs say, </p>
 <div class="fragment"><pre class="fragment">This will <span class="keyword">set</span> the game to have one VSync per frame
             QualitySettings.vSyncCount = 1;
-</pre></div> <div class="fragment"><pre class="fragment">            <span class="comment">//This will set the game to have two VSync per frame</span>
-            QualitySettings.vSyncCount = 2;
 </pre></div> <div class="fragment"><pre class="fragment">            <span class="comment">//This will disable vsync</span>
             QualitySettings.vSyncCount = 0;
 </pre></div>  <a href="#aaa1cff6213122533bd418c2dd71e87dc"></a><br/></td></tr>
@@ -479,12 +496,12 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aefaedf084f77b336d3d83a198579d98b"></a><!-- doxytag: member="GreatArcStudios::PauseManager::disMSAA" ref="aefaedf084f77b336d3d83a198579d98b" args="()" -->
+<a class="anchor" id="aa6b61410e08f184fee21e9bcf5694847"></a><!-- doxytag: member="GreatArcStudios::PauseManager::disableMSAA" ref="aa6b61410e08f184fee21e9bcf5694847" args="()" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void GreatArcStudios::PauseManager::disMSAA </td>
+          <td class="memname">void GreatArcStudios::PauseManager::disableMSAA </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -512,6 +529,23 @@ Protected Attributes</h2></td></tr>
 <div class="memdoc">
 
 <p>Set MSAA to 8x using quality settings. </p>
+
+</div>
+</div>
+<a class="anchor" id="a6033d5835c33dd42b556ae784312aba2"></a><!-- doxytag: member="GreatArcStudios::PauseManager::enableSimpleTerrain" ref="a6033d5835c33dd42b556ae784312aba2" args="(Boolean b)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GreatArcStudios::PauseManager::enableSimpleTerrain </td>
+          <td>(</td>
+          <td class="paramtype">Boolean&#160;</td>
+          <td class="paramname"><em>b</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
 
 </div>
 </div>
@@ -1514,6 +1548,58 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a88a19f56dd66315486f2ddbce79a085f"></a><!-- doxytag: member="GreatArcStudios::PauseManager::aoToggle" ref="a88a19f56dd66315486f2ddbce79a085f" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UnityEngine.UI.Toggle <a class="el" href="class_great_arc_studios_1_1_pause_manager.html#a88a19f56dd66315486f2ddbce79a085f">GreatArcStudios::PauseManager::aoToggle</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae1d1acbad2457c55fe6cb92d6b60abaa"></a><!-- doxytag: member="GreatArcStudios::PauseManager::audioEffectsSlider" ref="ae1d1acbad2457c55fe6cb92d6b60abaa" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UnityEngine.UI.Slider <a class="el" href="class_great_arc_studios_1_1_pause_manager.html#ae1d1acbad2457c55fe6cb92d6b60abaa">GreatArcStudios::PauseManager::audioEffectsSlider</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="adbf7d3f4c5aa423d5a624c089732a1c2"></a><!-- doxytag: member="GreatArcStudios::PauseManager::audioMasterSlider" ref="adbf7d3f4c5aa423d5a624c089732a1c2" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UnityEngine.UI.Slider <a class="el" href="class_great_arc_studios_1_1_pause_manager.html#adbf7d3f4c5aa423d5a624c089732a1c2">GreatArcStudios::PauseManager::audioMasterSlider</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="adc6326277b386a6956ea5259ebcee9f7"></a><!-- doxytag: member="GreatArcStudios::PauseManager::audioMusicSlider" ref="adc6326277b386a6956ea5259ebcee9f7" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UnityEngine.UI.Slider <a class="el" href="class_great_arc_studios_1_1_pause_manager.html#adc6326277b386a6956ea5259ebcee9f7">GreatArcStudios::PauseManager::audioMusicSlider</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a5309462d7efc3855681cd1655e554d42"></a><!-- doxytag: member="GreatArcStudios::PauseManager::audioPanel" ref="a5309462d7efc3855681cd1655e554d42" args="" -->
 <div class="memitem">
 <div class="memproto">
@@ -1591,6 +1677,19 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a498d01c3dd361b01f25b3752e104e8f7"></a><!-- doxytag: member="GreatArcStudios::PauseManager::dofToggle" ref="a498d01c3dd361b01f25b3752e104e8f7" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UnityEngine.UI.Toggle <a class="el" href="class_great_arc_studios_1_1_pause_manager.html#a498d01c3dd361b01f25b3752e104e8f7">GreatArcStudios::PauseManager::dofToggle</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a0ee4178f452b39b3afa09a8278ff7d18"></a><!-- doxytag: member="GreatArcStudios::PauseManager::effects" ref="a0ee4178f452b39b3afa09a8278ff7d18" args="" -->
 <div class="memitem">
 <div class="memproto">
@@ -1618,6 +1717,61 @@ Protected Attributes</h2></td></tr>
 <div class="memdoc">
 
 <p>Inital fov. </p>
+
+</div>
+</div>
+<a class="anchor" id="a425c322c1a986e4be4239c1cd67c6a3c"></a><!-- doxytag: member="GreatArcStudios::PauseManager::fovSlider" ref="a425c322c1a986e4be4239c1cd67c6a3c" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UnityEngine.UI.Slider <a class="el" href="class_great_arc_studios_1_1_pause_manager.html#a425c322c1a986e4be4239c1cd67c6a3c">GreatArcStudios::PauseManager::fovSlider</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6097cd469cd27f746b3b3ca837062464"></a><!-- doxytag: member="GreatArcStudios::PauseManager::fullscreenToggle" ref="a6097cd469cd27f746b3b3ca837062464" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UnityEngine.UI.Toggle <a class="el" href="class_great_arc_studios_1_1_pause_manager.html#a6097cd469cd27f746b3b3ca837062464">GreatArcStudios::PauseManager::fullscreenToggle</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a16600b00bffd4918dac2f9e0e0251a97"></a><!-- doxytag: member="GreatArcStudios::PauseManager::hardCodeSomeVideoSettings" ref="a16600b00bffd4918dac2f9e0e0251a97" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Boolean <a class="el" href="class_great_arc_studios_1_1_pause_manager.html#a16600b00bffd4918dac2f9e0e0251a97">GreatArcStudios::PauseManager::hardCodeSomeVideoSettings</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Editor boolean for hardcoding certain video settings. </p>
+<p>It will allow you to use the values defined in LOD Bias and Shadow Distance </p>
+
+</div>
+</div>
+<a class="anchor" id="a7f7903436dfd0c0133e80d76840f9c32"></a><!-- doxytag: member="GreatArcStudios::PauseManager::highQualTreeSlider" ref="a7f7903436dfd0c0133e80d76840f9c32" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UnityEngine.UI.Slider <a class="el" href="class_great_arc_studios_1_1_pause_manager.html#a7f7903436dfd0c0133e80d76840f9c32">GreatArcStudios::PauseManager::highQualTreeSlider</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
 
 </div>
 </div>
@@ -1710,6 +1864,19 @@ Protected Attributes</h2></td></tr>
 <div class="memdoc">
 
 <p>The mask that makes the scene darker. </p>
+
+</div>
+</div>
+<a class="anchor" id="ac0028d0124f4843fd901b20d714736e1"></a><!-- doxytag: member="GreatArcStudios::PauseManager::modelQualSlider" ref="ac0028d0124f4843fd901b20d714736e1" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UnityEngine.UI.Slider <a class="el" href="class_great_arc_studios_1_1_pause_manager.html#ac0028d0124f4843fd901b20d714736e1">GreatArcStudios::PauseManager::modelQualSlider</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
 
 </div>
 </div>
@@ -1818,6 +1985,19 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a469cba821727515fd0e8f2fb58906db5"></a><!-- doxytag: member="GreatArcStudios::PauseManager::renderDistSlider" ref="a469cba821727515fd0e8f2fb58906db5" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UnityEngine.UI.Slider <a class="el" href="class_great_arc_studios_1_1_pause_manager.html#a469cba821727515fd0e8f2fb58906db5">GreatArcStudios::PauseManager::renderDistSlider</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="ac6cb83a52f15b8e1ab96a438f8553599"></a><!-- doxytag: member="GreatArcStudios::PauseManager::resolutionLabel" ref="ac6cb83a52f15b8e1ab96a438f8553599" args="" -->
 <div class="memitem">
 <div class="memproto">
@@ -1864,6 +2044,19 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ae33280a52c07b831ad4673e671c90ed5"></a><!-- doxytag: member="GreatArcStudios::PauseManager::shadowDistSlider" ref="ae33280a52c07b831ad4673e671c90ed5" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UnityEngine.UI.Slider <a class="el" href="class_great_arc_studios_1_1_pause_manager.html#ae33280a52c07b831ad4673e671c90ed5">GreatArcStudios::PauseManager::shadowDistSlider</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a7bd0c36677d413e8b412eb90163e7854"></a><!-- doxytag: member="GreatArcStudios::PauseManager::simpleTerrain" ref="a7bd0c36677d413e8b412eb90163e7854" args="" -->
 <div class="memitem">
 <div class="memproto">
@@ -1891,6 +2084,32 @@ Protected Attributes</h2></td></tr>
 <div class="memdoc">
 
 <p>One terrain variable used if you have a terrain plugin like rtp. </p>
+
+</div>
+</div>
+<a class="anchor" id="ae8c9d5cb99406fe6a38c826bf100ba11"></a><!-- doxytag: member="GreatArcStudios::PauseManager::terrainDensitySlider" ref="ae8c9d5cb99406fe6a38c826bf100ba11" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UnityEngine.UI.Slider <a class="el" href="class_great_arc_studios_1_1_pause_manager.html#ae8c9d5cb99406fe6a38c826bf100ba11">GreatArcStudios::PauseManager::terrainDensitySlider</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af15e7efabed684b143864acd4b6befd0"></a><!-- doxytag: member="GreatArcStudios::PauseManager::terrainQualSlider" ref="af15e7efabed684b143864acd4b6befd0" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UnityEngine.UI.Slider <a class="el" href="class_great_arc_studios_1_1_pause_manager.html#af15e7efabed684b143864acd4b6befd0">GreatArcStudios::PauseManager::terrainQualSlider</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
 
 </div>
 </div>
@@ -1940,6 +2159,21 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a56ea9306f3aa8f53e60d050a178cbd27"></a><!-- doxytag: member="GreatArcStudios::PauseManager::useSimpleTerrain" ref="a56ea9306f3aa8f53e60d050a178cbd27" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Boolean <a class="el" href="class_great_arc_studios_1_1_pause_manager.html#a56ea9306f3aa8f53e60d050a178cbd27">GreatArcStudios::PauseManager::useSimpleTerrain</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Boolean for turning on simple terrain. </p>
+
+</div>
+</div>
 <a class="anchor" id="ab1a3cba6689d167e25a17a3dc34945f4"></a><!-- doxytag: member="GreatArcStudios::PauseManager::vidPanel" ref="ab1a3cba6689d167e25a17a3dc34945f4" args="" -->
 <div class="memitem">
 <div class="memproto">
@@ -1984,22 +2218,33 @@ Protected Attributes</h2></td></tr>
 <p>Inital vsync count, the Unity docs say, </p>
 <div class="fragment"><pre class="fragment">This will <span class="keyword">set</span> the game to have one VSync per frame
             QualitySettings.vSyncCount = 1;
-</pre></div> <div class="fragment"><pre class="fragment">            <span class="comment">//This will set the game to have two VSync per frame</span>
-            QualitySettings.vSyncCount = 2;
 </pre></div> <div class="fragment"><pre class="fragment">            <span class="comment">//This will disable vsync</span>
             QualitySettings.vSyncCount = 0;
 </pre></div> </p>
 
 </div>
 </div>
+<a class="anchor" id="a39f21e4760c8e541a9e610a0d6578e33"></a><!-- doxytag: member="GreatArcStudios::PauseManager::vSyncToggle" ref="a39f21e4760c8e541a9e610a0d6578e33" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UnityEngine.UI.Toggle <a class="el" href="class_great_arc_studios_1_1_pause_manager.html#a39f21e4760c8e541a9e610a0d6578e33">GreatArcStudios::PauseManager::vSyncToggle</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>D:/Documents/Unity3d/mega/MEGAsync/Pause Menu Assetstore/Assets/Pause Menu Assets/Scripts/Pausemenu/<a class="el" href="_pause_manager_8cs.html">PauseManager.cs</a></li>
+<li>D:/Documents/GitHub/unitypausemenu/Pause Menu Assetstore/Assets/Pause Menu Assets/Scripts/Pausemenu/<a class="el" href="_pause_manager_8cs.html">PauseManager.cs</a></li>
 </ul>
 </div>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Feb 16 2016 18:54:37 for Pause Menu Asset by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Feb 25 2016 15:28:25 for Pause Menu Asset by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.5
 </small></address>

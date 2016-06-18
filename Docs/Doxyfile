@@ -32,13 +32,13 @@ PROJECT_NAME           = "Pause Menu Asset"
 # This could be handy for archiving the generated documentation or 
 # if some version control system is used.
 
-PROJECT_NUMBER         = Ver: mar2916-0.5R 
+PROJECT_NUMBER         = Ver: jun1816-1.0R 
 
 # Using the PROJECT_BRIEF tag one can provide an optional one line description 
 # for a project that appears at the top of each page and should give viewer 
 # a quick idea about the purpose of the project. Keep the description short.
 
-PROJECT_BRIEF          = "This asset is an open source Unity Pause Menu, created by Eric Zhu. © 2016 Eric Zhu of Great Arc Studios." 
+PROJECT_BRIEF          = "This asset is an open source pause menu, created by Eric Zhu. © 2016 Eric Zhu of Great Arc Studios." 
 
 # With the PROJECT_LOGO tag one can specify an logo or icon that is 
 # included in the documentation. The maximum height of the logo should not 
